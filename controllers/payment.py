@@ -3,7 +3,6 @@ from odoo.addons.website_sale.controllers.main import WebsiteSale
 
 class WebsiteSaleController(WebsiteSale):
     def _get_shop_payment_values(self, order, **kwargs):
-        print('asas',order)
         res = super(WebsiteSaleController,self)._get_shop_payment_values(order, **kwargs)
         ids = []
         for rec in res['acquirers']:
